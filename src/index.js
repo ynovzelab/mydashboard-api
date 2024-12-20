@@ -20,7 +20,7 @@ const initApp = async () => {
 
     const typeDefs = `
     type Sale {
-        salesId: ID!
+        saleId: ID!
         quantitySold: Int
         totalRevenue: Int
         saleDate: String
@@ -46,7 +46,6 @@ const initApp = async () => {
     const server = new ApolloServer({
         typeDefs,
         resolvers,
-        // import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
         plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
     });
 
@@ -119,8 +118,7 @@ const initApp = async () => {
     // app.listen(PORT, () => {
     //     console.log(`Server is running on port ${PORT}`);
     // });
-    await new Promise(resolve => httpServer.listen({ port: 4000 }, resolve));
+    await new Promise(resolve => httpServer.listen({ port: 3030 }, resolve));
 }
 
 initApp();
-
