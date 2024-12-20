@@ -1,0 +1,256 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de Ventes",
+        "version": "1.0.0",
+        "description": "Documentation de l'API pour la gestion des ventes"
+    },
+    "servers": [
+        {
+            "url": "https://hackathon-k2f4.onrender.com/",
+            "description": "API de production"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
+    "paths": {
+        "/api": {
+            "get": {
+                "summary": "Retourne un message de bienvenue",
+                "responses": {
+                    "200": {
+                        "description": "Succès",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "example": "Hello World!"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/sales": {
+            "get": {
+                "summary": "Retourne la liste des ventes",
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "required": true,
+                        "description": "Token JWT requis au format 'Bearer <token>'",
+                        "schema": {
+                            "type": "string",
+                            "example": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Succès",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "saleId": {
+                                                        "type": "integer",
+                                                        "example": 201
+                                                    },
+                                                    "product": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "productId": {
+                                                                "type": "string",
+                                                                "example": "G001"
+                                                            },
+                                                            "name": {
+                                                                "type": "string",
+                                                                "example": "Console de jeu X-Series"
+                                                            },
+                                                            "category": {
+                                                                "type": "string",
+                                                                "example": "Jeux vidéo"
+                                                            },
+                                                            "price": {
+                                                                "type": "number",
+                                                                "example": 500
+                                                            },
+                                                            "brand": {
+                                                                "type": "string",
+                                                                "example": "GameWorld"
+                                                            },
+                                                            "releaseYear": {
+                                                                "type": "integer",
+                                                                "example": 2023
+                                                            },
+                                                            "features": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "string"
+                                                                },
+                                                                "example": [
+                                                                    "8K Gaming",
+                                                                    "512GB Storage",
+                                                                    "VR Ready"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "quantitySold": {
+                                                        "type": "integer",
+                                                        "example": 25
+                                                    },
+                                                    "totalRevenue": {
+                                                        "type": "number",
+                                                        "example": 12500
+                                                    },
+                                                    "saleDate": {
+                                                        "type": "string",
+                                                        "format": "date",
+                                                        "example": "2024-11-01"
+                                                    },
+                                                    "region": {
+                                                        "type": "string",
+                                                        "example": "Île-de-France"
+                                                    },
+                                                    "salesChannel": {
+                                                        "type": "string",
+                                                        "example": "En ligne"
+                                                    },
+                                                    "customer": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "customerId": {
+                                                                "type": "string",
+                                                                "example": "C001"
+                                                            },
+                                                            "username": {
+                                                                "type": "string",
+                                                                "example": "PlayerOne"
+                                                            },
+                                                            "age": {
+                                                                "type": "integer",
+                                                                "example": 21
+                                                            },
+                                                            "gender": {
+                                                                "type": "string",
+                                                                "example": "Homme"
+                                                            },
+                                                            "loyaltyMember": {
+                                                                "type": "boolean",
+                                                                "example": true
+                                                            },
+                                                            "loyaltyPointsEarned": {
+                                                                "type": "integer",
+                                                                "example": 250
+                                                            }
+                                                        }
+                                                    },
+                                                    "paymentMethod": {
+                                                        "type": "string",
+                                                        "example": "Carte de crédit"
+                                                    },
+                                                    "purchaseFeedback": {
+                                                        "type": "string",
+                                                        "example": "Excellent produit, expérience de jeu immersive !"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Token requis"
+                    },
+                    "401": {
+                        "description": "Token invalide"
+                    }
+                }
+            }
+        },
+        "/api/auth/login": {
+            "post": {
+                "summary": "Authentifie un utilisateur et retourne un token",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "example": "user@ynov.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "example": "jhG6P8HrRopmvZqNbKUhAg"
+                                    }
+                                },
+                                "required": [
+                                    "email",
+                                    "password"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Succès",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "token": {
+                                            "type": "string",
+                                            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                                        },
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Email et mot de passe requis"
+                    },
+                    "401": {
+                        "description": "Identifiant ou mot de passe invalide"
+                    }
+                }
+            }
+        }
+    }
+}

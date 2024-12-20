@@ -1,0 +1,932 @@
+[
+    {
+        "saleId": 201,
+        "product": {
+            "productId": "G001",
+            "name": "Console de jeu X-Series",
+            "category": "Jeux vidéo",
+            "price": 500,
+            "brand": "GameWorld",
+            "releaseYear": 2023,
+            "features": [
+                "8K Gaming",
+                "512GB Storage",
+                "VR Ready"
+            ]
+        },
+        "quantitySold": 25,
+        "totalRevenue": 12500,
+        "saleDate": "2024-11-01",
+        "region": "Île-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C001",
+            "username": "PlayerOne",
+            "age": 21,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 250
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Excellent produit, expérience de jeu immersive !"
+    },
+    {
+        "saleId": 202,
+        "product": {
+            "productId": "M002",
+            "name": "Casque VR Pro",
+            "category": "Accessoires",
+            "price": 300,
+            "brand": "VirtuaMax",
+            "releaseYear": 2024,
+            "features": [
+                "120° FOV",
+                "4K Resolution",
+                "Wireless"
+            ]
+        },
+        "quantitySold": 15,
+        "totalRevenue": 4500,
+        "saleDate": "2024-11-02",
+        "region": "Auvergne-Rhône-Alpes",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C002",
+            "username": "VRKing",
+            "age": 29,
+            "gender": "Homme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "PayPal",
+        "purchaseFeedback": "Super casque, immersion totale !"
+    },
+    {
+        "saleId": 203,
+        "product": {
+            "productId": "A003",
+            "name": "Smartphone Gamer 2.0",
+            "category": "Électronique",
+            "price": 950,
+            "brand": "GamePhone",
+            "releaseYear": 2024,
+            "features": [
+                "120Hz Display",
+                "Liquid Cooling",
+                "5G Connectivity"
+            ]
+        },
+        "quantitySold": 10,
+        "totalRevenue": 9500,
+        "saleDate": "2024-11-03",
+        "region": "Provence-Alpes-Côte d'Azur",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C003",
+            "username": "MobileMaster",
+            "age": 26,
+            "gender": "Femme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 95
+        },
+        "paymentMethod": "Virement bancaire",
+        "purchaseFeedback": "Performances incroyables, parfait pour le gaming mobile."
+    },
+    {
+        "saleId": 204,
+        "product": {
+            "productId": "S004",
+            "name": "Drone Racing Pro",
+            "category": "Drones",
+            "price": 1200,
+            "brand": "FlyFast",
+            "releaseYear": 2023,
+            "features": [
+                "High-Speed Mode",
+                "4K Camera",
+                "Obstacle Avoidance"
+            ]
+        },
+        "quantitySold": 5,
+        "totalRevenue": 6000,
+        "saleDate": "2024-11-04",
+        "region": "Nouvelle-Aquitaine",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C004",
+            "username": "SkyPilot",
+            "age": 34,
+            "gender": "Homme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Le drone est rapide et précis, parfait pour les compétitions."
+    },
+    {
+        "saleId": 205,
+        "product": {
+            "productId": "F005",
+            "name": "Skateboard Électrique",
+            "category": "Mobilité urbaine",
+            "price": 700,
+            "brand": "UrbanFlow",
+            "releaseYear": 2024,
+            "features": [
+                "Autonomie 30km",
+                "Vitesse max 40 km/h",
+                "Pneus tout-terrain"
+            ]
+        },
+        "quantitySold": 20,
+        "totalRevenue": 14000,
+        "saleDate": "2024-11-05",
+        "region": "Hauts-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C005",
+            "username": "StreetSurfer",
+            "age": 19,
+            "gender": "Femme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 140
+        },
+        "paymentMethod": "Cryptomonnaie",
+        "purchaseFeedback": "Très rapide et maniable, parfait pour se déplacer en ville."
+    },
+    {
+        "saleId": 206,
+        "product": {
+            "productId": "B006",
+            "name": "Smartwatch FitX",
+            "category": "Accessoires",
+            "price": 250,
+            "brand": "TimeGear",
+            "releaseYear": 2023,
+            "features": [
+                "Cardio Tracking",
+                "Waterproof",
+                "GPS Integrated"
+            ]
+        },
+        "quantitySold": 40,
+        "totalRevenue": 10000,
+        "saleDate": "2024-11-06",
+        "region": "Bretagne",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C006",
+            "username": "RunnerLife",
+            "age": 31,
+            "gender": "Homme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Apple Pay",
+        "purchaseFeedback": "Parfaite pour suivre mes entraînements."
+    },
+    {
+        "saleId": 207,
+        "product": {
+            "productId": "C007",
+            "name": "Hoverboard 2.0",
+            "category": "Mobilité urbaine",
+            "price": 400,
+            "brand": "HoverTech",
+            "releaseYear": 2024,
+            "features": [
+                "LED Lights",
+                "Bluetooth Speakers",
+                "Self-Balancing"
+            ]
+        },
+        "quantitySold": 15,
+        "totalRevenue": 6000,
+        "saleDate": "2024-11-07",
+        "region": "Normandie",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C007",
+            "username": "HoverMaster",
+            "age": 24,
+            "gender": "Femme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 60
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Amusant et facile à utiliser !"
+    },
+    {
+        "saleId": 208,
+        "product": {
+            "productId": "D008",
+            "name": "Casque Audio ANC Supreme",
+            "category": "Accessoires",
+            "price": 300,
+            "brand": "SoundMax",
+            "releaseYear": 2023,
+            "features": [
+                "Active Noise Cancelling",
+                "Hi-Res Audio",
+                "Wireless"
+            ]
+        },
+        "quantitySold": 25,
+        "totalRevenue": 7500,
+        "saleDate": "2024-11-08",
+        "region": "Grand Est",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C008",
+            "username": "SoundLover",
+            "age": 35,
+            "gender": "Homme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Google Pay",
+        "purchaseFeedback": "Son incroyable et suppression du bruit efficace."
+    },
+    {
+        "saleId": 209,
+        "product": {
+            "productId": "E009",
+            "name": "Projecteur HomeCinema 4K",
+            "category": "Électronique",
+            "price": 1200,
+            "brand": "CineHome",
+            "releaseYear": 2024,
+            "features": [
+                "4K Resolution",
+                "HDR",
+                "WiFi Connectivity"
+            ]
+        },
+        "quantitySold": 8,
+        "totalRevenue": 9600,
+        "saleDate": "2024-11-09",
+        "region": "Pays de la Loire",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C009",
+            "username": "MovieBuff",
+            "age": 45,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 96
+        },
+        "paymentMethod": "Carte cadeau",
+        "purchaseFeedback": "Qualité d'image époustouflante, parfait pour les soirées cinéma."
+    },
+    {
+        "saleId": 210,
+        "product": {
+            "productId": "F010",
+            "name": "Batterie externe solaire",
+            "category": "Accessoires",
+            "price": 50,
+            "brand": "SunPower",
+            "releaseYear": 2023,
+            "features": [
+                "Solar Charging",
+                "Fast Charging",
+                "10,000mAh"
+            ]
+        },
+        "quantitySold": 100,
+        "totalRevenue": 5000,
+        "saleDate": "2024-11-10",
+        "region": "Île-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C010",
+            "username": "EcoTraveler",
+            "age": 27,
+            "gender": "Femme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Virement bancaire",
+        "purchaseFeedback": "Pratique pour les voyages, éco-responsable."
+    },
+    {
+        "saleId": 211,
+        "product": {
+            "productId": "G011",
+            "name": "Drone PhotoMaster",
+            "category": "Drones",
+            "price": 1500,
+            "brand": "SkyCam",
+            "releaseYear": 2024,
+            "features": [
+                "High Resolution Camera",
+                "GPS",
+                "Extended Battery Life"
+            ]
+        },
+        "quantitySold": 12,
+        "totalRevenue": 18000,
+        "saleDate": "2024-11-11",
+        "region": "Île-de-France",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C011",
+            "username": "PhotoFlyer",
+            "age": 39,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 180
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Les photos sont superbes, excellente stabilité en vol."
+    },
+    {
+        "saleId": 212,
+        "product": {
+            "productId": "H012",
+            "name": "Trotinette Électrique Pro",
+            "category": "Mobilité urbaine",
+            "price": 600,
+            "brand": "UrbanRide",
+            "releaseYear": 2024,
+            "features": [
+                "Pliable",
+                "Autonomie 25km",
+                "Amortisseurs"
+            ]
+        },
+        "quantitySold": 30,
+        "totalRevenue": 18000,
+        "saleDate": "2024-11-12",
+        "region": "Île-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C012",
+            "username": "CityRider",
+            "age": 22,
+            "gender": "Femme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "PayPal",
+        "purchaseFeedback": "Très maniable et parfaite pour la ville."
+    },
+    {
+        "saleId": 213,
+        "product": {
+            "productId": "I013",
+            "name": "Écouteurs Bluetooth",
+            "category": "Accessoires",
+            "price": 120,
+            "brand": "AudioPro",
+            "releaseYear": 2024,
+            "features": [
+                "Hi-Fi Sound",
+                "Noise Reduction",
+                "Sweatproof"
+            ]
+        },
+        "quantitySold": 60,
+        "totalRevenue": 7200,
+        "saleDate": "2024-11-13",
+        "region": "Provence-Alpes-Côte d'Azur",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C013",
+            "username": "SoundJunkie",
+            "age": 28,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 72
+        },
+        "paymentMethod": "Apple Pay",
+        "purchaseFeedback": "Petit et pratique, son excellent."
+    },
+    {
+        "saleId": 214,
+        "product": {
+            "productId": "J014",
+            "name": "PC Portable Gamer",
+            "category": "Électronique",
+            "price": 1800,
+            "brand": "TechGaming",
+            "releaseYear": 2024,
+            "features": [
+                "RTX 4080",
+                "32GB RAM",
+                "1TB SSD"
+            ]
+        },
+        "quantitySold": 8,
+        "totalRevenue": 14400,
+        "saleDate": "2024-11-14",
+        "region": "Île-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C014",
+            "username": "GamePro",
+            "age": 25,
+            "gender": "Femme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 144
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Une bête de course, parfaite pour le gaming."
+    },
+    {
+        "saleId": 215,
+        "product": {
+            "productId": "K015",
+            "name": "Smart TV 65\" OLED",
+            "category": "Électronique",
+            "price": 2200,
+            "brand": "VisionX",
+            "releaseYear": 2023,
+            "features": [
+                "OLED Display",
+                "Smart Assistant",
+                "HDR10+"
+            ]
+        },
+        "quantitySold": 5,
+        "totalRevenue": 11000,
+        "saleDate": "2024-11-15",
+        "region": "Hauts-de-France",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C015",
+            "username": "CinePhile",
+            "age": 40,
+            "gender": "Homme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Image splendide et interface intuitive."
+    },
+    {
+        "saleId": 216,
+        "product": {
+            "productId": "L016",
+            "name": "Tablette Pro X",
+            "category": "Électronique",
+            "price": 900,
+            "brand": "TabElite",
+            "releaseYear": 2024,
+            "features": [
+                "120Hz Screen",
+                "Stylus Included",
+                "10h Battery Life"
+            ]
+        },
+        "quantitySold": 15,
+        "totalRevenue": 13500,
+        "saleDate": "2024-11-16",
+        "region": "Auvergne-Rhône-Alpes",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C016",
+            "username": "ArtGuru",
+            "age": 34,
+            "gender": "Femme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 135
+        },
+        "paymentMethod": "Virement bancaire",
+        "purchaseFeedback": "Idéale pour le dessin et les présentations."
+    },
+    {
+        "saleId": 217,
+        "product": {
+            "productId": "M017",
+            "name": "Projecteur LED Portable",
+            "category": "Électronique",
+            "price": 300,
+            "brand": "MiniCine",
+            "releaseYear": 2023,
+            "features": [
+                "HD Resolution",
+                "Battery Operated",
+                "WiFi"
+            ]
+        },
+        "quantitySold": 25,
+        "totalRevenue": 7500,
+        "saleDate": "2024-11-17",
+        "region": "Nouvelle-Aquitaine",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C017",
+            "username": "TinyTheater",
+            "age": 38,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 75
+        },
+        "paymentMethod": "Carte cadeau",
+        "purchaseFeedback": "Parfait pour les soirées en extérieur."
+    },
+    {
+        "saleId": 218,
+        "product": {
+            "productId": "N018",
+            "name": "Enceinte Bluetooth Étanche",
+            "category": "Accessoires",
+            "price": 150,
+            "brand": "WaveAudio",
+            "releaseYear": 2024,
+            "features": [
+                "Waterproof",
+                "360° Sound",
+                "12h Battery Life"
+            ]
+        },
+        "quantitySold": 40,
+        "totalRevenue": 6000,
+        "saleDate": "2024-11-18",
+        "region": "Bretagne",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C018",
+            "username": "BeachVibes",
+            "age": 27,
+            "gender": "Femme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Cryptomonnaie",
+        "purchaseFeedback": "Super son et résiste bien à l'eau."
+    },
+    {
+        "saleId": 219,
+        "product": {
+            "productId": "O019",
+            "name": "Vélo Électrique City",
+            "category": "Mobilité urbaine",
+            "price": 1800,
+            "brand": "EcoBike",
+            "releaseYear": 2024,
+            "features": [
+                "Autonomie 60km",
+                "Assistance Électrique",
+                "Freinage ABS"
+            ]
+        },
+        "quantitySold": 10,
+        "totalRevenue": 18000,
+        "saleDate": "2024-11-19",
+        "region": "Normandie",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C019",
+            "username": "EcoRider",
+            "age": 36,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 180
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Très bon vélo, idéal pour les trajets urbains."
+    },
+    {
+        "saleId": 220,
+        "product": {
+            "productId": "P020",
+            "name": "Montre Connectée Luxe",
+            "category": "Accessoires",
+            "price": 500,
+            "brand": "EliteTime",
+            "releaseYear": 2023,
+            "features": [
+                "Sapphire Glass",
+                "Heart Rate Monitor",
+                "Luxury Design"
+            ]
+        },
+        "quantitySold": 20,
+        "totalRevenue": 10000,
+        "saleDate": "2024-11-20",
+        "region": "Grand Est",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C020",
+            "username": "LuxuryLover",
+            "age": 43,
+            "gender": "Femme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Virement bancaire",
+        "purchaseFeedback": "Belle finition et fonctionnalités complètes."
+    },
+    {
+        "saleId": 221,
+        "product": {
+            "productId": "Q021",
+            "name": "Imprimante 3D",
+            "category": "Électronique",
+            "price": 1000,
+            "brand": "PrintMaker",
+            "releaseYear": 2024,
+            "features": [
+                "Dual Extruder",
+                "WiFi",
+                "Auto-Bed Leveling"
+            ]
+        },
+        "quantitySold": 5,
+        "totalRevenue": 5000,
+        "saleDate": "2024-11-21",
+        "region": "Île-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C021",
+            "username": "MakerMind",
+            "age": 29,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 50
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Impressions précises et rapides, un must pour les makers."
+    },
+    {
+        "saleId": 222,
+        "product": {
+            "productId": "R022",
+            "name": "Climatiseur Portable",
+            "category": "Électroménager",
+            "price": 300,
+            "brand": "CoolBreeze",
+            "releaseYear": 2023,
+            "features": [
+                "Portable",
+                "Remote Control",
+                "Energy Efficient"
+            ]
+        },
+        "quantitySold": 30,
+        "totalRevenue": 9000,
+        "saleDate": "2024-11-22",
+        "region": "Auvergne-Rhône-Alpes",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C022",
+            "username": "CoolGuy",
+            "age": 41,
+            "gender": "Homme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Rafraîchit rapidement, très efficace."
+    },
+    {
+        "saleId": 223,
+        "product": {
+            "productId": "S023",
+            "name": "Souris Gamer RGB",
+            "category": "Accessoires",
+            "price": 80,
+            "brand": "ClickMaster",
+            "releaseYear": 2024,
+            "features": [
+                "16,000 DPI",
+                "RGB Lighting",
+                "Ergonomic Design"
+            ]
+        },
+        "quantitySold": 50,
+        "totalRevenue": 4000,
+        "saleDate": "2024-11-23",
+        "region": "Île-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C023",
+            "username": "ProGamer",
+            "age": 22,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 40
+        },
+        "paymentMethod": "Cryptomonnaie",
+        "purchaseFeedback": "Très réactive, parfait pour le gaming."
+    },
+    {
+        "saleId": 224,
+        "product": {
+            "productId": "T024",
+            "name": "Tapis de course connecté",
+            "category": "Sport",
+            "price": 1200,
+            "brand": "FitRun",
+            "releaseYear": 2023,
+            "features": [
+                "Smart Display",
+                "Heart Rate Monitor",
+                "Foldable"
+            ]
+        },
+        "quantitySold": 8,
+        "totalRevenue": 9600,
+        "saleDate": "2024-11-24",
+        "region": "Provence-Alpes-Côte d'Azur",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C024",
+            "username": "FitFreak",
+            "age": 30,
+            "gender": "Femme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Facile à utiliser, bon complément pour l'entraînement."
+    },
+    {
+        "saleId": 225,
+        "product": {
+            "productId": "U025",
+            "name": "Casque de réalité augmentée",
+            "category": "Électronique",
+            "price": 1000,
+            "brand": "VisionAR",
+            "releaseYear": 2024,
+            "features": [
+                "AR Apps",
+                "Lightweight Design",
+                "HD Display"
+            ]
+        },
+        "quantitySold": 10,
+        "totalRevenue": 10000,
+        "saleDate": "2024-11-25",
+        "region": "Île-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C025",
+            "username": "ARMaster",
+            "age": 32,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 100
+        },
+        "paymentMethod": "Carte cadeau",
+        "purchaseFeedback": "Expérience AR fluide et immersive."
+    },
+    {
+        "saleId": 226,
+        "product": {
+            "productId": "V026",
+            "name": "Montre sport GPS",
+            "category": "Accessoires",
+            "price": 300,
+            "brand": "SportTime",
+            "releaseYear": 2023,
+            "features": [
+                "GPS Tracking",
+                "Heart Rate Monitor",
+                "Waterproof"
+            ]
+        },
+        "quantitySold": 25,
+        "totalRevenue": 7500,
+        "saleDate": "2024-11-26",
+        "region": "Hauts-de-France",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C026",
+            "username": "TrailRunner",
+            "age": 29,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 75
+        },
+        "paymentMethod": "Apple Pay",
+        "purchaseFeedback": "Indispensable pour mes entraînements en extérieur."
+    },
+    {
+        "saleId": 227,
+        "product": {
+            "productId": "W027",
+            "name": "Camera de surveillance 4K",
+            "category": "Sécurité",
+            "price": 500,
+            "brand": "SecureHome",
+            "releaseYear": 2024,
+            "features": [
+                "Night Vision",
+                "Motion Detection",
+                "Cloud Storage"
+            ]
+        },
+        "quantitySold": 18,
+        "totalRevenue": 9000,
+        "saleDate": "2024-11-27",
+        "region": "Île-de-France",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C027",
+            "username": "SafetyFirst",
+            "age": 47,
+            "gender": "Femme",
+            "loyaltyMember": false,
+            "loyaltyPointsEarned": 0
+        },
+        "paymentMethod": "Virement bancaire",
+        "purchaseFeedback": "Simple à installer, surveillance efficace."
+    },
+    {
+        "saleId": 228,
+        "product": {
+            "productId": "X028",
+            "name": "Station météo connectée",
+            "category": "Maison intelligente",
+            "price": 200,
+            "brand": "WeatherPro",
+            "releaseYear": 2023,
+            "features": [
+                "WiFi",
+                "Forecast Display",
+                "Temperature Alerts"
+            ]
+        },
+        "quantitySold": 20,
+        "totalRevenue": 4000,
+        "saleDate": "2024-11-28",
+        "region": "Normandie",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C028",
+            "username": "WeatherGeek",
+            "age": 34,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 40
+        },
+        "paymentMethod": "Cryptomonnaie",
+        "purchaseFeedback": "Très précis, un bon investissement."
+    },
+    {
+        "saleId": 229,
+        "product": {
+            "productId": "Y029",
+            "name": "Lampe LED connectée",
+            "category": "Maison intelligente",
+            "price": 60,
+            "brand": "BrightLife",
+            "releaseYear": 2023,
+            "features": [
+                "App Controlled",
+                "Color Changing",
+                "Dimmable"
+            ]
+        },
+        "quantitySold": 80,
+        "totalRevenue": 4800,
+        "saleDate": "2024-11-29",
+        "region": "Pays de la Loire",
+        "salesChannel": "En ligne",
+        "customer": {
+            "customerId": "C029",
+            "username": "LightLover",
+            "age": 22,
+            "gender": "Femme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 48
+        },
+        "paymentMethod": "Carte de crédit",
+        "purchaseFeedback": "Facile à configurer, très pratique."
+    },
+    {
+        "saleId": 230,
+        "product": {
+            "productId": "Z030",
+            "name": "Robot aspirateur Pro",
+            "category": "Maison intelligente",
+            "price": 700,
+            "brand": "CleanBot",
+            "releaseYear": 2024,
+            "features": [
+                "Smart Mapping",
+                "Self-Charging",
+                "Voice Command"
+            ]
+        },
+        "quantitySold": 10,
+        "totalRevenue": 7000,
+        "saleDate": "2024-11-30",
+        "region": "Bretagne",
+        "salesChannel": "Magasin physique",
+        "customer": {
+            "customerId": "C030",
+            "username": "NeatFreak",
+            "age": 39,
+            "gender": "Homme",
+            "loyaltyMember": true,
+            "loyaltyPointsEarned": 70
+        },
+        "paymentMethod": "PayPal",
+        "purchaseFeedback": "Un gain de temps considérable, nettoyage impeccable."
+    }
+]
