@@ -26,17 +26,43 @@ const initApp = async () => {
         saleDate: String
         region : String
         salesChannel: String
+        paymentMethod: String
+        product: Product
+        customer: Customer
     }
+
+    type Product {
+        productId: ID!
+        name: String
+        category: String
+        price: Int
+        brand: String
+        releaseYear: String
+        features: [String]
+    }
+
+    type Customer {
+        customerId: ID!
+        username: String
+        age: Int
+        gender: String
+        loyaltyMember: Boolean
+        loyaltyPointsEarned: Int
+    }
+
     type Query {
         sales: [Sale]
-        sale(salesId: ID!): Sale
+        sale(saleId: ID!): Sale
     }
 `
-
     const resolvers = {
         Query: {
             sales: () => {
+                console.log('salesJson', salesJson);
                 return salesJson;
+            },
+            sale: (parent, args, context, info) => {
+                return salesJson.find(sale => sale.saleId == args.saleId);
             }
         }
     }
